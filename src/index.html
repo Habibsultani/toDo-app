@@ -6,39 +6,41 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <title>TO_DO_APP</title>
   </head>
-  <body class="ingre-bg mx-3 px-1">
-    <div
-      class="container p-6 mx-auto mt-16 items-center max-w-md h-auto bg-gray-400 rounded-md drop-shadow-lg"
-    >
-      <h2 class="text-2xl font-semibold text-center mb-2">To Do</h2>
+  <body class="ingre-bg">
+    <main id="content" class="mx-3 px-1">
+      <div
+        class="container p-6 mx-auto mt-16 items-center max-w-md h-auto bg-gray-400 rounded-md drop-shadow-lg"
+      >
+        <h2 class="text-2xl font-semibold text-center mb-2">To Do</h2>
 
-      <form class="flex flex-col">
-        <label for="TO_DO">New toDo</label>
-        <input
-          id="TO_DO"
-          type="text"
-          placeholder="add..."
-          class="max-w-auto bg-gray-300 p-1 mt-1.5 mb-4 border-none"
-        />
-        <p id="error-inp" class="hidden text-red-800">
-          The input must not be empty!
+        <form class="flex flex-col">
+          <label for="TO_DO">New toDo</label>
+          <input
+            id="TO_DO"
+            type="text"
+            placeholder="add..."
+            class="max-w-auto bg-gray-300 p-1 mt-1.5 mb-4 border-none"
+          />
+          <p id="error-inp" class="hidden text-red-800">
+            The input must not be empty!
+          </p>
+          <button
+            id="addbtn"
+            class="addbtn px-auto py-1.5 bg-gray-800 text-white mb-4"
+          >
+            Add
+          </button>
+        </form>
+        <hr />
+        <p id="paraErr" class="text-stone-700">
+          There is not any thing to do yet.
         </p>
-        <button
-          id="addbtn"
-          class="addbtn px-auto py-1.5 bg-gray-800 text-white mb-4"
-        >
-          Add
-        </button>
-      </form>
-      <hr />
-      <p id="paraErr" class="text-stone-700">
-        There is not any thing to do yet.
-      </p>
-      <ol
-        id="OL_RENDER"
-        class="flex flex-col gap-2 px-0.5 mt-2 list-decimal list-inside style1-2-3"
-      ></ol>
-    </div>
+        <ol
+          id="OL_RENDER"
+          class="flex flex-col gap-2 px-0.5 mt-2 list-decimal list-inside style1-2-3"
+        ></ol>
+      </div>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -25,7 +25,7 @@ addbtn.addEventListener("click", function (e) {
   h3.textContent = newTodo;
 
   const doneButton = document.createElement("button");
-  doneButton.className = "bg-red-900 text-white py-0.5 px-2 rounded-xl";
+  doneButton.className = "bg-orange-800 text-white py-0.5 px-2 rounded-xl";
   doneButton.textContent = "pending";
 
   doneButton.addEventListener("click", function () {
