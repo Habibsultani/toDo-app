@@ -1,0 +1,28 @@
+/* My Custom Classes*/
+
+/* styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.ingre-bg {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(13, 121, 24, 1) 54%,
+    rgba(43, 43, 43, 1) 100%
+  );
+}
+
+.style1-2-3 {
+  list-style-type: disc;
+}
+
+.done {
+  background-color: green;
+}
+
+.hidden {
+  opacity: 0;
+}
